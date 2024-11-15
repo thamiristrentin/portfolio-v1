@@ -17,3 +17,13 @@
     font-family: Jura-SemiBold;
     src: url("/fontes/Jura-SemiBold.ttf") format('truetype');
   }
+
+:root {
+  --roxo: #3D0C40;
+  --preto: #1E1E1E;
+  --azul: #3399FF;
+  --branco: #EAEAEA;
+  --rosa: #FF66B2;
+  --verde: #39FF14;
+  --rosa-escuro: #AD157A;
+}

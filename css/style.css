@@ -1,5 +1,5 @@
 body {
-    background-color: #eaeaea;
+    background-color: var(--branco);
 }
 
 header {
@@ -24,7 +24,7 @@ header {
             .menu-item a {
                 text-decoration-line: none;
                 text-decoration: none;
-                color: #1e1e1e;
+                color: var(--preto);
             }
 
                 #menu-item-home {
@@ -62,7 +62,7 @@ header {
     .texto-home h1 {
         font: 8em "Jura-Regular", sans-serif;
         letter-spacing: 0.06em;
-        color: #eaeaea;
+        color: var(--branco);
         text-shadow: 12px 12px 4px #00000031;
     }
 
@@ -70,20 +70,20 @@ header {
         font: 2.5em "Jura-Regular", sans-serif;
         letter-spacing: 0.2em;
         line-height: 130.1%;
-        color: #eaeaea;
+        color: var(--branco);
         margin-top: 15px;
     }
 
         #ideas {
-            color: #FF66B2;
+            color: var(--rosa);
         }
 
         #feel {
-            color: #3399FF;
+            color: var(--azul);
         }
 
         #exp {
-            color: #39FF14;
+            color: var(--verde);
         }
         
 .botao-home {
@@ -95,7 +95,7 @@ header {
 
     .botao {
         font: 2.5em "Jura-Bold", sans-serif;
-        color: #2e2e2e;
+        color: var(--preto);
         letter-spacing: 0.06em;
         justify-content: center;
     }
@@ -104,7 +104,7 @@ header {
         text-decoration: none;
         width: 32.44%;
         height: 90px;
-        background-color: #3399FF;
+        background-color: var(--azul);
         border-radius: 50px;
         box-shadow: 9px 9px 10.5px #0F2C49;
         display: flex;
@@ -126,7 +126,7 @@ header {
 
 .sobre h2 {
     font: 3.43em "Jura-Bold", sans-serif;
-    color: #3D0C40;
+    color: var(--roxo);
     margin-top: 79px;
     text-align: center;
 }
@@ -137,7 +137,7 @@ header {
     letter-spacing: 0.05em;
     display: flex;
     align-items: center;
-    color: #1E1E1E;
+    color: var(--preto);
     margin-top: 25px;
 }
 
@@ -149,7 +149,7 @@ header {
     width: 24.94%;
     height: 67px;
     border-radius: 20px;
-    background-color: #2e2e2e;
+    background-color: var(--preto);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,7 +161,7 @@ header {
 
 .tools p {
     font: 1.5em "Jura-Bold", sans-serif;
-    color: #eaeaea;
+    color: var(--branco);
 }
 
 .vscode-container {
@@ -205,7 +205,7 @@ header {
 }
 
 .overlay {
-    background-color: #2e2e2e;
+    background-color: var(--preto);
     width: 321px;
     border-radius: 20px;
     
@@ -223,7 +223,7 @@ header {
 
 .overlay h1 {
     font: 3em "Jura-Bold", sans-serif;
-    color: #eaeaea;
+    color: var(--branco);
     text-align: center;
     text-shadow: 6px 6px 6.3px #00000031;
 }
@@ -254,7 +254,7 @@ header {
     max-width: 100%;
     height: 372px;
     background-image: url("/imagens/banner-falecomigo.png");
-    color: #eaeaea;
+    color: var(--branco);
     margin-top: 121px;
     display: flex;
     flex-direction: column;
@@ -267,7 +267,7 @@ header {
 }
 
 #vida {
-    color: #FF66B2;
+    color: var(--rosa);
 }
 
 .banner h2 {
@@ -275,7 +275,7 @@ header {
 }
 
 #proximo {
-    color: #3399FF;
+    color: var(--azul);
 }
 
 .banner h1, .banner h2 {
@@ -291,7 +291,7 @@ header {
 
 #botao-falecomigo {
     font: 2.5em "Jura-Bold", sans-serif;
-    color: #39FF14;
+    color: var(--verde);
     letter-spacing: 0.06em;
     text-decoration: underline 1px;
 }
@@ -301,3 +301,60 @@ header {
     padding-left: 5px;
 }
 
+.projetos-recentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos-recentes h1 {
+    font: 3em "Jura-Bold", sans-serif;
+    color: var(--branco);
+    background-color: var(--roxo);
+    border-radius: 15px;
+    width: 30%;
+    height: 90px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+.projeto-um, .projeto-dois, .projeto-tres, .projeto-quatro, .projeto-cinco, .projeto-seis {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ver-projeto a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.ver-projeto {
+    background-color: var(--roxo);
+    font: 2em "Jura-Bold", sans-serif;
+    border: none;
+    padding: 2% 8%;
+    width: max-content;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.footer {
+    background-color: var(--roxo);
+    margin-top: 8%;
+    width: 100%;
+    height: 150px;
+}

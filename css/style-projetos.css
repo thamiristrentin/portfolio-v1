@@ -5,7 +5,7 @@ body {
 header {
     height: 112px;
     width: 100%;
-    background-color: #eaeaea;
+    background-color: var(--branco);
 }
 
     nav {
@@ -25,7 +25,7 @@ header {
             .menu-item a {
                 text-decoration-line: none;
                 text-decoration: none;
-                color: #1e1e1e;
+                color: var(--preto);
             }
 
                 #menu-item-contato {
