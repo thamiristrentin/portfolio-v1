@@ -1,0 +1,303 @@
+body {
+    background-color: #eaeaea;
+}
+
+header {
+    height: 112px;
+    max-width: 100%;
+}
+
+    nav {
+        font: 2em "Jura-Bold", sans-serif;
+        text-align: center;
+        word-spacing: 38px;
+        height: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        nav li {
+            display: inline;
+        }
+
+            .menu-item a {
+                text-decoration-line: none;
+                text-decoration: none;
+                color: #1e1e1e;
+            }
+
+                #menu-item-home {
+                    position: relative;
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                    .point {
+                        position: absolute;
+                        top: 133%;
+                        /* Coloca a seta logo abaixo do link "Home" */
+                        left: 50%;
+                        /* Centraliza a seta horizontalmente */
+                        transform: translateX(-50%);
+                        /* Ajusta a posição para o centro exato */
+                        margin-top: 10px;
+                        /* Ajuste a distância entre o link e a seta */
+                    }
+
+.home {
+    background-image: url("/imagens/home.png");
+    max-width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-home {
+    margin: 91px 0% auto 9.06%;
+    max-width: 100%;
+}
+
+    .texto-home h1 {
+        font: 8em "Jura-Regular", sans-serif;
+        letter-spacing: 0.06em;
+        color: #eaeaea;
+        text-shadow: 12px 12px 4px #00000031;
+    }
+
+    .texto-home p {
+        font: 2.5em "Jura-Regular", sans-serif;
+        letter-spacing: 0.2em;
+        line-height: 130.1%;
+        color: #eaeaea;
+        margin-top: 15px;
+    }
+
+        #ideas {
+            color: #FF66B2;
+        }
+
+        #feel {
+            color: #3399FF;
+        }
+
+        #exp {
+            color: #39FF14;
+        }
+        
+.botao-home {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 82px;
+}
+
+    .botao {
+        font: 2.5em "Jura-Bold", sans-serif;
+        color: #2e2e2e;
+        letter-spacing: 0.06em;
+        justify-content: center;
+    }
+
+    .botao-home a {
+        text-decoration: none;
+        width: 32.44%;
+        height: 90px;
+        background-color: #3399FF;
+        border-radius: 50px;
+        box-shadow: 9px 9px 10.5px #0F2C49;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+#seta {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sobre {
+    width: 59.94%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre h2 {
+    font: 3.43em "Jura-Bold", sans-serif;
+    color: #3D0C40;
+    margin-top: 79px;
+    text-align: center;
+}
+
+.sobre p {
+    font: 1.87em "Jura-Regular", sans-serif;
+    line-height: 117%;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    color: #1E1E1E;
+    margin-top: 25px;
+}
+
+.section-tools {
+    max-width: 100%;
+}
+
+.tools {
+    width: 24.94%;
+    height: 67px;
+    border-radius: 20px;
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.40%;
+    margin: 0 auto;
+    margin-top: 91px;
+    position: relative;
+}
+
+.tools p {
+    font: 1.5em "Jura-Bold", sans-serif;
+    color: #eaeaea;
+}
+
+.vscode-container {
+    display: flex;
+    position: relative;
+}
+
+#vscode-overlay {
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.figma-container {
+    display: flex;
+    position: relative;
+}
+
+#figma-overlay {
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.psd-container {
+    display: flex;
+    position: relative;
+}
+
+#psd-overlay {
+    position: absolute;
+    top: 148%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vscode-container:hover .overlay, .figma-container:hover .overlay, .psd-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    background-color: #2e2e2e;
+    width: 321px;
+    border-radius: 20px;
+    
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+#point-overlay {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.overlay h1 {
+    font: 3em "Jura-Bold", sans-serif;
+    color: #eaeaea;
+    text-align: center;
+    text-shadow: 6px 6px 6.3px #00000031;
+}
+
+.overlay p {
+    font: 1.37em "Jura-Regular", sans-serif;
+}
+
+.overlay h1, .overlay p {
+    margin: 7% 9% 8% 9%;
+}
+
+.aponte {
+    display: flex;
+    width: 23%;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+.aponte p{
+    font: 1em "Jura-Regular", sans-serif;
+    color: #000000;
+    letter-spacing: 0.05em;
+    line-height: 117%;
+}
+
+.banner {
+    max-width: 100%;
+    height: 372px;
+    background-image: url("/imagens/banner-falecomigo.png");
+    color: #eaeaea;
+    margin-top: 121px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.banner h1 {
+    font: 4.68em "Jura-SemiBold", sans-serif;
+}
+
+#vida {
+    color: #FF66B2;
+}
+
+.banner h2 {
+    font: 3.43em "Jura-SemiBold", sans-serif;
+}
+
+#proximo {
+    color: #3399FF;
+}
+
+.banner h1, .banner h2 {
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.botao-falecomigo {
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+#botao-falecomigo {
+    font: 2.5em "Jura-Bold", sans-serif;
+    color: #39FF14;
+    letter-spacing: 0.06em;
+    text-decoration: underline 1px;
+}
+
+#pointer {
+    padding-top: 14px;
+    padding-left: 5px;
+}
+
