@@ -46,7 +46,7 @@ header {
                         /* Ajuste a distância entre o link e a seta */
                     }
 
-#home {
+#section-home {
     background: var(--roxo ) url("/imagens/home.png") no-repeat top right;
 }
 
@@ -93,267 +93,59 @@ header {
     padding-top: 3.87rem;
 }
 
-    .botao {
-        font: 2.25rem "Poppins-Bold", sans-serif;
-        color: var(--preto);
-        letter-spacing: 0.06em;
-        justify-content: center;
-    }
-
-    .botao-home a {
-        text-decoration: none;
-        background-color: var(--azul);
-        padding: 1.12rem 3.12rem;
-        border-radius: 15px;
-        box-shadow: 9px 9px 10.5px #0F2C49;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-#seta {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.sobre {
-    width: 59.94%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.sobre h2 {
-    font: 3.43em "Jura-Bold", sans-serif;
+.botao {
+    font: 2.25rem "Poppins-Bold", sans-serif;
     color: var(--roxo);
-    margin-top: 79px;
-    text-align: center;
-}
-
-.sobre p {
-    font: 1.87em "Jura-Regular", sans-serif;
-    line-height: 117%;
-    letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
-    color: var(--preto);
-    margin-top: 25px;
-}
-
-.section-tools {
-    max-width: 100%;
-}
-
-.tools {
-    width: 24.94%;
-    height: 67px;
-    border-radius: 20px;
-    background-color: var(--preto);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.40%;
-    margin: 0 auto;
-    margin-top: 91px;
-    position: relative;
-}
-
-.tools p {
-    font: 1.5em "Jura-Bold", sans-serif;
-    color: var(--branco);
-}
-
-.vscode-container {
-    display: flex;
-    position: relative;
-}
-
-#vscode-overlay {
-    position: absolute;
-    top: 160%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.figma-container {
-    display: flex;
-    position: relative;
-}
-
-#figma-overlay {
-    position: absolute;
-    top: 155%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.psd-container {
-    display: flex;
-    position: relative;
-}
-
-#psd-overlay {
-    position: absolute;
-    top: 148%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.vscode-container:hover .overlay, .figma-container:hover .overlay, .psd-container:hover .overlay {
-    opacity: 1;
-}
-
-.overlay {
-    background-color: var(--preto);
-    width: 321px;
-    border-radius: 20px;
-    
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
-}
-
-#point-overlay {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.overlay h1 {
-    font: 3em "Jura-Bold", sans-serif;
-    color: var(--branco);
-    text-align: center;
-    text-shadow: 6px 6px 6.3px #00000031;
-}
-
-.overlay p {
-    font: 1.37em "Jura-Regular", sans-serif;
-}
-
-.overlay h1, .overlay p {
-    margin: 7% 9% 8% 9%;
-}
-
-.aponte {
-    display: flex;
-    width: 23%;
-    margin: 0 auto;
-    margin-top: 3px;
-}
-
-.aponte p{
-    font: 1em "Jura-Regular", sans-serif;
-    color: #000000;
-    letter-spacing: 0.05em;
-    line-height: 117%;
-}
-
-.banner {
-    max-width: 100%;
-    height: 372px;
-    background-image: url("/imagens/banner-falecomigo.png");
-    color: var(--branco);
-    margin-top: 121px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.banner h1 {
-    font: 4.68em "Jura-SemiBold", sans-serif;
-}
-
-#vida {
-    color: var(--rosa);
-}
-
-.banner h2 {
-    font: 3.43em "Jura-SemiBold", sans-serif;
-}
-
-#proximo {
-    color: var(--azul);
-}
-
-.banner h1, .banner h2 {
-    text-align: center;
     letter-spacing: 0.06em;
-}
-
-.botao-falecomigo {
-    display: flex;
     justify-content: center;
-    margin-top: 34px;
+    letter-spacing: 6%;
 }
 
-#botao-falecomigo {
-    font: 2.5em "Jura-Bold", sans-serif;
-    color: var(--verde);
-    letter-spacing: 0.06em;
-    text-decoration: underline 1px;
-}
-
-#pointer {
-    padding-top: 14px;
-    padding-left: 5px;
-}
-
-.projetos-recentes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.projetos-recentes h1 {
-    font: 3em "Jura-Bold", sans-serif;
-    color: var(--branco);
-    background-color: var(--roxo);
-    border-radius: 15px;
-    width: 30%;
-    height: 90px;
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.projetos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4%;
-}
-
-.projeto-um, .projeto-dois, .projeto-tres, .projeto-quatro, .projeto-cinco, .projeto-seis {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ver-projeto a {
+.botao-home a {
     text-decoration: none;
-    color: var(--branco);
-}
-
-.ver-projeto {
-    background-color: var(--roxo);
-    font: 2em "Jura-Bold", sans-serif;
-    border: none;
-    padding: 2% 8%;
-    width: max-content;
-    border-radius: 10px;
+    background-color: var(--azul);
+    padding: 1.12rem 3.12rem;
+    border-radius: 15px;
+    box-shadow: 9px 9px 10.5px #00000057;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 3%;
+    justify-content: center;
 }
 
-.footer {
-    background-color: var(--roxo);
-    margin-top: 8%;
-    width: 100%;
-    height: 150px;
+
+/* ------------------------------------------------------------ */
+
+.cta {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--branco);
+    padding-top: 5rem;
 }
+
+.cta h1 {
+    font: 3.93rem "Poppins-SemiBold", sans-serif;
+    letter-spacing: 14%;
+}
+
+.cta h2 {
+    font: 3.12rem "Poppins-Regular", sans-serif;
+    letter-spacing: 11%;
+}
+
+.botao-section-cta {
+    padding-top: 2.43rem;
+    }
+    
+    .botao-cta {
+        font: 2.87rem "Poppins-Bold", sans-serif;
+        
+        letter-spacing: 14%;
+    }
+    
+    .botao-section-cta a {
+        background-color: var(--rosa);
+        text-decoration: none;
+        padding: 0.68rem 2.25rem;
+        border-radius: 15px;
+        box-shadow: 9px 9px 10.5px #00000057;
+    }

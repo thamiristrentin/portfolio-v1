@@ -1,32 +1,42 @@
 * {margin: 0; padding: 0;}
 
-  @font-face {
-    font-family: Jura-Regular;
-    src: url("/fontes/Jura-Regular.ttf") format('truetype');
-  }
-  @font-face {
-    font-family: Jura-Medium;
-    src: url("/fontes/Jura-Medium.ttf") format('truetype');
-  }
-  @font-face {
-    font-family: Jura-Bold;
-    src: url("/fontes/Jura-Bold.ttf") format('truetype');
-  }
+@font-face {
+  font-family: Jura-Regular;
+  src: url("/fontes/Jura-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: Jura-Medium;
+  src: url("/fontes/Jura-Medium.ttf") format('truetype');
+}
+@font-face {
+  font-family: Jura-Bold;
+  src: url("/fontes/Jura-Bold.ttf") format('truetype');
+}
 
-  @font-face {
-    font-family: Jura-SemiBold;
-    src: url("/fontes/Jura-SemiBold.ttf") format('truetype');
-  }
+@font-face {
+  font-family: Jura-SemiBold;
+  src: url("/fontes/Jura-SemiBold.ttf") format('truetype');
+}
 
-  @font-face {
-    font-family: Jura-Light;
-    src: url("/fontes/Jura-Light.ttf") format('truetype');
-  }
+@font-face {
+  font-family: Jura-Light;
+  src: url("/fontes/Jura-Light.ttf") format('truetype');
+}
 
-  @font-face {
-    font-family: Poppins-Bold;
-    src: url("/fontes/Poppins-Bold.ttf") format('truetype');
-  }
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/fontes/Poppins-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("/fontes/Poppins-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("/fontes/Poppins-Regular.ttf") format('truetype');
+}
 
 :root {
   --roxo: #3D0C40;
