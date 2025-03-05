@@ -18,9 +18,20 @@
     src: url("/fontes/Jura-SemiBold.ttf") format('truetype');
   }
 
+  @font-face {
+    font-family: Jura-Light;
+    src: url("/fontes/Jura-Light.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url("/fontes/Poppins-Bold.ttf") format('truetype');
+  }
+
 :root {
   --roxo: #3D0C40;
   --preto: #1E1E1E;
+  --preto-claro: #2E2E2E;
   --azul: #3399FF;
   --branco: #EAEAEA;
   --rosa: #FF66B2;

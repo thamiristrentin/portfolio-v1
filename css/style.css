@@ -1,17 +1,17 @@
 body {
-    background-color: var(--branco);
+    background-color: var(--preto);
 }
 
 header {
-    height: 112px;
+    height: 5.87rem;
     max-width: 100%;
 }
 
     nav {
-        font: 2em "Jura-Bold", sans-serif;
+        font: 1.43rem "Jura-Light", sans-serif;
         text-align: center;
-        word-spacing: 38px;
-        height: 112px;
+        word-spacing: 2.56rem;
+        height: 5.87rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,7 +24,7 @@ header {
             .menu-item a {
                 text-decoration-line: none;
                 text-decoration: none;
-                color: var(--preto);
+                color: var(--branco);
             }
 
                 #menu-item-home {
@@ -42,36 +42,37 @@ header {
                         /* Centraliza a seta horizontalmente */
                         transform: translateX(-50%);
                         /* Ajusta a posição para o centro exato */
-                        margin-top: 10px;
+                        margin-top: 0.65rem;
                         /* Ajuste a distância entre o link e a seta */
                     }
 
+#home {
+    background: var(--roxo ) url("/imagens/home.png") no-repeat top right;
+}
+
 .home {
-    background-image: url("/imagens/home.png");
-    max-width: 100%;
-    height: 750px;
     display: flex;
     flex-direction: column;
+    width: max-content;
 }
 
 .texto-home {
-    margin: 91px 0% auto 9.06%;
-    max-width: 100%;
+    padding: 9rem 13.31rem 8rem 13.31rem;
 }
 
     .texto-home h1 {
-        font: 8em "Jura-Regular", sans-serif;
-        letter-spacing: 0.06em;
+        font: 7.12rem "Jura-Regular", sans-serif;
+        letter-spacing: 0.06rem;
         color: var(--branco);
         text-shadow: 12px 12px 4px #00000031;
     }
 
     .texto-home p {
-        font: 2.5em "Jura-Regular", sans-serif;
-        letter-spacing: 0.2em;
+        font: 2.06rem "Jura-Regular", sans-serif;
+        letter-spacing: 0.2rem;
         line-height: 130.1%;
         color: var(--branco);
-        margin-top: 15px;
+        padding-top: 1.31rem;
     }
 
         #ideas {
@@ -87,14 +88,13 @@ header {
         }
         
 .botao-home {
-    max-width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 82px;
+    padding-top: 3.87rem;
 }
 
     .botao {
-        font: 2.5em "Jura-Bold", sans-serif;
+        font: 2.25rem "Poppins-Bold", sans-serif;
         color: var(--preto);
         letter-spacing: 0.06em;
         justify-content: center;
@@ -102,10 +102,9 @@ header {
 
     .botao-home a {
         text-decoration: none;
-        width: 32.44%;
-        height: 90px;
         background-color: var(--azul);
-        border-radius: 50px;
+        padding: 1.12rem 3.12rem;
+        border-radius: 15px;
         box-shadow: 9px 9px 10.5px #0F2C49;
         display: flex;
         align-items: center;
