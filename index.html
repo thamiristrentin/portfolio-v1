@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/overlayTecs.css">
 
     <title>Thamiris Trentin</title>
 </head>
@@ -14,11 +15,10 @@
         <nav>
             <ul>
                 <li class="menu-item" id="menu-item-home">
-                    <a href="index.html">HOME</a> 
-                    <img src="imagens/point.png" alt="seta" class="point">
+                    <a href="index.html">HOME</a>
                 </li>
 
-                <li class="menu-item"><a href="projetos.html">PROJETOS</a></li>
+                <li class="menu-item item-projetos"><a onclick="RolarProjetos('projetosRecentes', -70)">PROJETOS</a></li>
                 <li class="menu-item"><a href="contato.html">CONTATO</a></li>
             </ul>
         </nav>
@@ -30,35 +30,160 @@
                 <h1><span id="ideas">IDEAS</span> YOU</br>CAN <span id="feel">FELL</span></h1>
                 <p>CRIANDO <span id="exp">EXPERIÊNCIAS</span> DIGITAIS </br> QUE CONECTAM IDEIAS E EMOÇÕES</p>
 
-                <div class="botao-home">
-                    <a href="projetos.html" id="botao-home">
-                        <div class="botao">PROJETOS RECENTES</div>
-                    </a>
+                <div class="botao-home" onclick="RolarProjetos('projetosRecentes', 50)">
+                    <p>PROJETOS RECENTES</p>
                 </div>
             </div>
+
+            
         </div>
     </section>
 
     <section id="section-cta">
-        <div class="cta">
-            <h1>pronto para dar vida</h1>
-            <h2>ao seu próximo projeto?</h2>
-
-            <div class="botao-section-cta">
-                <a href="#" id="botao-cta">
-                    <div class="botao-cta">PROJETOS RECENTES</div>
-                </a>
+        <div class="ctaWrap">
+            <div class="cta">
+                <h1>pronto para dar vida</h1>
+                <h2>ao seu próximo projeto?</h2>
+                <div class="botao-cta" onclick="redirectTo('https://wa.me/5511949563780')">
+                    <p>fale comigo</p>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="imagens/cta.png" alt="">
             </div>
         </div>
     </section>
 
+    <section id="section-tecnologias"> <!-- MUDAR ICONS PRA SVG -->
+        <div class="titulo-tecs">
+            <h1>Tecnologias</h1>
+        </div>
+
+        <div class="wrap-tecs">
+            <div class="frontback">
+                <div class="tecs frontend">
+                    <div class="categoria">
+                        <h2>Front-end</h2>
+                    </div>
+                    
+                    <div class="frontbackWrap">
+                        <div class="frame frame-css">
+                            <img src="imagens/tecnologias/front/css-icon.png" alt="">
+                        </div>
+
+                        <div class="frame frame-html"><img src="imagens/tecnologias/front/html-icon.png" alt=""></div>
+
+                        <div class="frame frame-javascript"><img src="imagens/tecnologias/front/js-icon.png" alt=""></div>
+                    </div>
+
+                    <div class="overlay vscodeOverlay">
+                        <h1>VS Code</h1>
+                        <p>Um editor de código eficiente, que facilita a programação de websites, oferecendo suporte para várias linguagens e extensões que otimizam o desenvolvimento.</p>
+                    </div>
+                </div>
+
+                
+                <div class="tecs backend">
+                    <div class="categoria">
+                        <h2>Back-end</h2>
+                    </div>
+
+                    <div class="frontbackWrap">
+                        <div class="frame frame-python"><img src="imagens/tecnologias/back/python-icon.png" alt=""></div>
+
+                        <div class="frame frame-php"><img src="imagens/tecnologias/back/php-icon.png" alt=""></div>
+
+                        <div class="frame frame-mysql"><img src="imagens/tecnologias/back/sql-icon.png" alt=""></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="tecs others">
+                <div class="categoria">
+                    <h2>Back-end</h2>
+                </div>
+
+                <div class="frontbackWrap">
+                    <div class="frame frame-figma"><img src="imagens/tecnologias/outros/figma-icon.png" alt=""></div>
+                    <div class="frame frame-psd"><img src="imagens/tecnologias/outros/psd-icon.png" alt=""></div>
+                    <div class="frame frame-vscode"><img src="imagens/tecnologias/outros/vs-icon.png" alt=""></div>
+                    <div class="frame frame-github"><img src="imagens/tecnologias/outros/github-icon.png" alt=""></div>
+                    <div class="frame frame-git"><img src="imagens/tecnologias/outros/git-icon.png" alt=""></div>
+                </div>
+
+                <div class="aponte">
+                    <p>*Aponte para conhecer</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-sobremim">
+        <div class="sobremim">
+            <h1>Thamiris Trentin</h1>
+            <p>Sou desenvolvedora web e estudante de Análise e Desenvolvimento de Sistemas, atualmente no 3º semestre na Unicid. Trabalho com criação e design de sites, sempre buscando unir funcionalidade e estética. No meu processo, utilizo ferramentas como Photoshop, Figma e VS Code para garantir que cada projeto seja bem estruturado e visualmente atraente. Gosto de manter as coisas simples e eficientes, focando em resultados práticos e objetivos.</p>
+        </div>
+    </section>
+
+    <section id="projetosRecentes">
+        <div class="projetosRecentes">
+            <h1>Projetos recentes</h1>
+
+            <div class="projetos">
+                <div class="projeto" id="projeto-1">
+                    
+                    
+                    <div class="img-projeto" onclick="redirectTo('//thamiristrentin.github.io/smash-and-craft-burgers/')">
+                        <div class="setaVerMais">
+                            <img src="imagens/projetos/pointer.png" alt="">
+                            ver mais
+                        </div>
+                        
+                        <img src="imagens/projetos/projeto-1.png" alt="" class="project-image">
+                    </div>
+                </div>
     
+                <div class="projeto" id="projeto-2">
+                        <div class="img-projeto" onclick="redirectTo('//thamiristrentin.github.io/projeto-clinica-estetica/')">
+                            <img src="imagens/projetos/projeto-2.png" alt="" class="project-image">
+                        </div>
+                </div>
+    
+                <div class="projeto" id="projeto-3">
+                        <div class="img-projeto" onclick="redirectTo('//thamiristrentin.github.io/projeto-floresadv/')">
+                            <img src="imagens/projetos/projeto-3.png" alt="" class="project-image">
+                        </div>
+                </div>
 
-
+                <div class="projeto" id="projeto-4">
+                    <div class="img-projeto" onclick="redirectTo('//thamiristrentin.github.io/smash-and-craft-burgers/')">
+                        <img src="imagens/projetos/projeto-1.png" alt="" class="project-image">
+                    </div>
+                </div>
+    
+                <div class="projeto" id="projeto-5">
+                        <div class="img-projeto" onclick="redirectTo('//thamiristrentin.github.io/projeto-clinica-estetica/')">
+                            <img src="imagens/projetos/projeto-2.png" alt="" class="project-image">
+                        </div>
+                </div>
+    
+                <div class="projeto" id="projeto-6">
+                        <div class="img-projeto" onclick="redirectTo('//thamiristrentin.github.io/projeto-floresadv/')">
+                            <img src="imagens/projetos/projeto-3.png" alt="" class="project-image">
+                        </div>
+                </div>
+        </div>
+    </section>
     
 
     <footer>
         <div class="footer"></div>
     </footer>
+
+    <script src="js/rolarprojetos.js"></script>
+    <script src="js/scriptProjetos.js"></script>
+    <script src="js/redirectTo.js"></script>
 </body>
 </html>

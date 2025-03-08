@@ -7,57 +7,49 @@ header {
     max-width: 100%;
 }
 
-    nav {
-        font: 1.43rem "Jura-Light", sans-serif;
-        text-align: center;
-        word-spacing: 2.56rem;
-        height: 5.87rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+nav {
+    font: 1.43rem "Jura-Light", sans-serif;
+    text-align: center;
+    word-spacing: 2.56rem;
+    height: 5.87rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        nav li {
-            display: inline;
-        }
+ul {
+    display: flex;
+    gap: 2.56rem;
+    align-items: center;
+}
 
-            .menu-item a {
-                text-decoration-line: none;
-                text-decoration: none;
-                color: var(--branco);
-            }
+.menu-item a {
+    text-decoration-line: none;
+    text-decoration: none;
+    color: var(--branco);
+}
 
-                #menu-item-home {
-                    position: relative;
-                    display: inline-flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
+.item-projetos {
+    cursor: pointer;
+}
 
-                    .point {
-                        position: absolute;
-                        top: 133%;
-                        /* Coloca a seta logo abaixo do link "Home" */
-                        left: 50%;
-                        /* Centraliza a seta horizontalmente */
-                        transform: translateX(-50%);
-                        /* Ajusta a posição para o centro exato */
-                        margin-top: 0.65rem;
-                        /* Ajuste a distância entre o link e a seta */
-                    }
+.point {
+    
+}
 
 #section-home {
     background: var(--roxo ) url("/imagens/home.png") no-repeat top right;
+    min-width: 100%;
 }
 
 .home {
     display: flex;
     flex-direction: column;
-    width: max-content;
 }
 
 .texto-home {
-    padding: 9rem 13.31rem 8rem 13.31rem;
+    padding: 9rem 0rem 9.12rem 13.31rem;
+    width: max-content;
 }
 
     .texto-home h1 {
@@ -88,38 +80,39 @@ header {
         }
         
 .botao-home {
+    padding-top: 3.87rem;
     display: flex;
     justify-content: center;
-    padding-top: 3.87rem;
 }
 
-.botao {
+.botao-home p {
     font: 2.25rem "Poppins-Bold", sans-serif;
     color: var(--roxo);
-    letter-spacing: 0.06em;
-    justify-content: center;
     letter-spacing: 6%;
-}
-
-.botao-home a {
+    padding: 1.12rem 3.06rem;
     text-decoration: none;
     background-color: var(--azul);
-    padding: 1.12rem 3.12rem;
-    border-radius: 15px;
+    border-radius: 0.93rem;
     box-shadow: 9px 9px 10.5px #00000057;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
 }
 
 
 /* ------------------------------------------------------------ */
 
+.ctaWrap {
+    display: flex;
+    gap: 3.37rem;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
 .cta {
-    text-align: center;
     text-transform: uppercase;
     color: var(--branco);
-    padding-top: 5rem;
+    width: max-content;
 }
 
 .cta h1 {
@@ -132,20 +125,190 @@ header {
     letter-spacing: 11%;
 }
 
-.botao-section-cta {
-    padding-top: 2.43rem;
-    }
-    
-    .botao-cta {
-        font: 2.87rem "Poppins-Bold", sans-serif;
-        
-        letter-spacing: 14%;
-    }
-    
-    .botao-section-cta a {
-        background-color: var(--rosa);
-        text-decoration: none;
-        padding: 0.68rem 2.25rem;
-        border-radius: 15px;
-        box-shadow: 9px 9px 10.5px #00000057;
-    }
+.botao-cta {
+    padding-top: 2.18rem;
+    display: flex;
+
+}
+
+.botao-cta p {
+    font: 2.93rem "Poppins-Bold", sans-serif;
+    color: var(--preto);
+    letter-spacing: 6%;
+    padding: 0.68rem 2.8rem;
+    text-decoration: none;
+    background-color: var(--rosa);
+    border-radius: 0.93rem;
+    box-shadow: 9px 9px 10.5px #00000057;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.titulo-tecs h1 {
+    font: 2.37rem "Jura-Bold", sans-serif;
+    color: var(--branco);
+    text-align: center;
+    padding-top: 4.18rem;
+}
+
+.categoria h2 {
+    font: 1.87rem "Jura-Light", sans-serif;
+    color: var(--branco);
+    text-align: center;
+    padding-bottom: 1.56rem;
+}
+
+.wrap-tecs {
+    padding-top: 3.93rem;
+    padding-bottom: 11.31rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frontback {
+    display: flex;
+    gap: 9.12rem;
+}
+
+.frontbackWrap {
+    display: flex;
+    gap: 1.31rem;
+}
+
+.frame {
+    background-color: var(--pretoclaro);
+    width: 6.5rem;
+    height: 6.25rem;
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+.frame:hover {
+    box-shadow: inset 2px 2px 5px #000000b4;
+}
+
+.others {
+    padding-top: 3.06rem;
+}
+
+.aponte {
+    padding-top: 1.56rem;
+}
+
+.aponte p {
+    font: 1rem "Jura-Regular", sans-serif;
+    color: var(--branco);
+}
+
+/* ------------------------------------------------------------ */
+
+.sobremim {
+    background: var(--pretoclaro) url("/imagens/banner-falecomigo.png") no-repeat top center;
+    text-align: center;
+    padding: 6rem 0;
+
+}
+
+.sobremim h1 {
+    font: 3.12rem "Jura-Regular", sans-serif;
+    color: var(--rosa);
+    text-transform: uppercase;
+    letter-spacing: 15%;
+}
+
+.sobremim p {
+    font: 1.31rem "Jura-Light", sans-serif;
+    color: var(--branco);
+    padding-top: 2rem;
+    max-width: 85rem;
+    margin: 0 auto;
+    letter-spacing: 5%;
+}
+
+/* ------------------------------------------------------------ */
+
+.projetosRecentes {
+    padding-top: 11.5rem;
+}
+
+.projetosRecentes h1 {
+    font: 2.93rem "Poppins-ExtraLight", sans-serif;
+    letter-spacing: 19%;
+    color: var(--rosa);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.projetos {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 7.18rem 13.56rem;
+    padding-top: 4.62rem;
+    overflow: hidden; 
+    flex-flow: row wrap;
+    flex: 0 1 29.62rem;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 6px var(--rosa);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+.img-projeto {
+    width: 29.62rem;
+    height: 16.62rem;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.project-image {
+    width: 100%; /* Garante que a largura seja mantida */
+    height: auto; /* Mantém a proporção */
+    transform: translateY(0); /* Posição inicial */
+    transition: transform 2s ease; /* Suaviza o movimento */
+    will-change: transform; /* Reduz a perda de qualidade ao animar */
+  }
+
+  /* ------------------------------------------------------------ */
+
+.setaVerMais {
+    position: absolute;
+    z-index: 1000;
+    left: -1.06rem;
+    top: 1.68rem;
+    transform: translateY(50%, -50%);
+
+    color: var(--branco);
+    font: 0.87rem "Poppins-Regular", sans-serif;
+    letter-spacing: 19%;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    gap: 0.68rem;
+    background-color: var(--azul);
+    width: 9.5rem;
+    padding: 0.75rem 0 0.75rem 0.7rem;
+    border-radius: 5px;
+    clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+}
